@@ -4,6 +4,7 @@ from discord.ext import commands
 from gradio_client import Client
 
 # Initialize Gradio Client with the specified URL
+redirect_uri = os.environ.get('REDIRECT_URI', 'https://bot-eta-swart.vercel.app/')
 client_url = "https://bytedance-sdxl-lightning.hf.space/"
 client = Client(client_url)
 
